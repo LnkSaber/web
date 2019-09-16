@@ -20,6 +20,11 @@ export default new Router({
       path: '/postvideo',
       name: 'PostVideo',
       component: () => import(/* webpackChunkName: "about" */ './views/PostVideo.vue')
+    },
+    {
+      path: '/video/:videoID',
+      name: 'showVideo',
+      component: () => import('./views/ShowVideo.vue')
     }
   ]
 })
